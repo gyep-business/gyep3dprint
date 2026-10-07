@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="GYEP portfolio — selected 3D printed product showcases, personal pieces, gifts, and everyday objects.">
+  <title>Portfolio — GYEP | 3D Printed Things</title>
+  <link rel="icon" type="image/png" href="assets/logo/gyep-monogram-black.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body class="portfolio-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header" data-header>
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="GYEP Home">
+        <img src="assets/logo/gyep-monogram-black.png" alt="" class="brand-mark" decoding="async">
+        <span>GYEP</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="shop.html">Shop</a>
+        <a href="index.html#collections">Collections</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="btn btn-dark btn-nav" href="https://wa.me/6280000000000" target="_blank" rel="noopener">Order Now <span>↗</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu" data-menu-toggle>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu" data-mobile-menu>
+      <a href="shop.html">Shop</a>
+      <a href="index.html#collections">Collections</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn-dark" href="https://wa.me/6280000000000" target="_blank" rel="noopener">Order Now <span>↗</span></a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="portfolio-shell portfolio-hero">
+      <div class="portfolio-hero-grid">
+        <div>
+          <p class="portfolio-kicker">GYEP / SELECTED SHOWCASE</p>
+          <h1 class="portfolio-title">SEE WHAT WE'VE<br>MADE.</h1>
+        </div>
+        <p class="portfolio-intro">A visual look at the kinds of things GYEP can turn into physical pieces — from personal memories to useful everyday objects.</p>
+      </div>
+    </section>
+
+    <section class="portfolio-shell" aria-label="Portfolio filters and projects">
+      <div class="portfolio-tools" role="group" aria-label="Filter portfolio">
+        <button class="filter-chip is-active" type="button" data-filter="all">All</button>
+        <button class="filter-chip" type="button" data-filter="figurines">Figurines</button>
+        <button class="filter-chip" type="button" data-filter="photo-memory">Photo &amp; Memory</button>
+        <button class="filter-chip" type="button" data-filter="personalized">Personalized</button>
+        <button class="filter-chip" type="button" data-filter="event-souvenir">Souvenir &amp; Event</button>
+        <button class="filter-chip" type="button" data-filter="home-desk">Home &amp; Desk</button>
+      </div>
+
+      <div class="portfolio-grid" data-portfolio-grid></div>
+    </section>
+
+    <section class="portfolio-shell portfolio-cta">
+      <div>
+        <h2>YOUR IDEA<br>NEXT.</h2>
+      </div>
+      <div class="portfolio-cta-copy">
+        <p>Have a photo, name, place, event idea, or object in mind? Explore the catalog and turn the idea into something physical.</p>
+        <a class="btn btn-dark" href="shop.html">Explore Products <span>→</span></a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand-block">
+        <a class="footer-logo" href="index.html" aria-label="GYEP Home">
+          <img src="assets/logo/gyep-monogram-white.png" alt="GYEP" class="footer-mark" decoding="async">
+          <span class="brand-word">GYEP</span>
+        </a>
+        <p>3D PRINTED THINGS.<br>MADE PERSONAL.</p>
+      </div>
+      <div>
+        <span class="eyebrow">EXPLORE</span>
+        <a href="shop.html">Shop</a>
+        <a href="index.html#collections">Collections</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <span class="eyebrow">CONNECT</span>
+        <a href="https://wa.me/6280000000000" target="_blank" rel="noopener">WhatsApp ↗</a>
+        <a href="contact.html#connect">Instagram ↗</a>
+        <a href="contact.html#connect">Marketplace ↗</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year></span> GYEP</span>
+      <span>SPACE TO MAKE.</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script>
+    (() => {
+      const grid = document.querySelector('[data-portfolio-grid]');
+      const chips = [...document.querySelectorAll('[data-filter]')];
+      const projects = window.GYEP_PORTFOLIO || [];
+
+      const placeholder = (project) => `
+        <div class="mock-product mock-${project.accent || 'light'}" aria-hidden="true">
+          <span class="mock-orbit"></span>
+          <span class="mock-block mock-block-a"></span>
+          <span class="mock-block mock-block-b"></span>
+          <span class="mock-line"></span>
+          <span class="mock-caption">${project.product}</span>
+        </div>`;
+
+      function card(project) {
+        return `
+          <a class="portfolio-card" data-category="${project.category}" href="project.html?id=${encodeURIComponent(project.id)}#${encodeURIComponent(project.id)}">
+            <div class="portfolio-media-wrap">
+              <img class="portfolio-media" src="${project.image}" alt="${project.title}" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+              <div class="portfolio-fallback" hidden>${placeholder(project)}</div>
+              <div class="portfolio-overlay">
+                <span class="portfolio-tag">${project.tag}</span>
+                <span class="portfolio-index">${project.number}</span>
+              </div>
+            </div>
+            <div class="portfolio-meta">
+              <div class="portfolio-meta-main">
+                <h2>${project.title}</h2>
+                <p>${project.product} · ${project.categoryLabel}</p>
+              </div>
+              <span class="portfolio-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>`;
+      }
+
+      function render(filter = 'all') {
+        const visible = filter === 'all' ? projects : projects.filter(p => p.category === filter);
+        grid.innerHTML = visible.length ? visible.map(card).join('') : '<div class="portfolio-empty">Nothing here yet. Add your project to the portfolio dataset.</div>';
+      }
+
+      chips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          chips.forEach(c => c.classList.toggle('is-active', c === chip));
+          render(chip.dataset.filter);
+        });
+      });
+
+      render();
+      document.querySelectorAll('[data-year]').forEach(el => el.textContent = new Date().getFullYear());
+    })();
+  </script>
+</body>
+</html>

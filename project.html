@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="GYEP project showcase detail.">
+  <title>Project — GYEP | Showcase</title>
+  <link rel="icon" type="image/png" href="assets/logo/gyep-monogram-black.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body class="project-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header" data-header>
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="GYEP Home">
+        <img src="assets/logo/gyep-monogram-black.png" alt="" class="brand-mark" decoding="async">
+        <span>GYEP</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="shop.html">Shop</a>
+        <a href="index.html#collections">Collections</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="btn btn-dark btn-nav" href="https://wa.me/6280000000000" target="_blank" rel="noopener">Order Now <span>↗</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu" data-menu-toggle>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu" data-mobile-menu>
+      <a href="shop.html">Shop</a>
+      <a href="index.html#collections">Collections</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn-dark" href="https://wa.me/6280000000000" target="_blank" rel="noopener">Order Now <span>↗</span></a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="project-shell project-hero">
+      <a class="project-back" href="portfolio.html">← Back to Portfolio</a>
+      <div class="project-hero-grid">
+        <div>
+          <p class="project-kicker" data-project-kicker>GYEP / SHOWCASE</p>
+          <h1 class="project-title" data-project-title>PROJECT</h1>
+        </div>
+        <p class="project-summary" data-project-summary>Explore the project detail, product context, and production flow.</p>
+      </div>
+    </section>
+
+    <section class="project-shell">
+      <div class="project-detail-media">
+        <img data-project-image alt="" hidden>
+        <div class="portfolio-fallback project-fallback" data-project-fallback></div>
+      </div>
+
+      <div class="project-info-grid">
+        <dl class="project-specs" data-project-specs></dl>
+        <div>
+          <p class="project-story-label">PROJECT NOTE</p>
+          <h2 class="project-story-title" data-project-story-title>MADE TO KEEP.</h2>
+          <p class="project-story-copy" data-project-story-copy></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-shell project-process">
+      <div class="project-process-head">
+        <div>
+          <p class="project-story-label">THE FLOW</p>
+          <h2>FROM IDEA<br>TO OBJECT.</h2>
+        </div>
+        <p>Every product can use a simple flow: brief → design → approval → production.</p>
+      </div>
+      <div class="project-process-grid" data-project-steps></div>
+    </section>
+
+    <section class="project-shell project-end">
+      <h2>MAKE YOUR<br>OWN.</h2>
+      <a class="btn btn-dark" data-order-link href="shop.html">Find This Product <span>→</span></a>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand-block">
+        <a class="footer-logo" href="index.html" aria-label="GYEP Home">
+          <img src="assets/logo/gyep-monogram-white.png" alt="GYEP" class="footer-mark" decoding="async">
+          <span class="brand-word">GYEP</span>
+        </a>
+        <p>3D PRINTED THINGS.<br>MADE PERSONAL.</p>
+      </div>
+      <div>
+        <span class="eyebrow">EXPLORE</span>
+        <a href="shop.html">Shop</a>
+        <a href="index.html#collections">Collections</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <span class="eyebrow">CONNECT</span>
+        <a href="https://wa.me/6280000000000" target="_blank" rel="noopener">WhatsApp ↗</a>
+        <a href="contact.html#connect">Instagram ↗</a>
+        <a href="contact.html#connect">Marketplace ↗</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year></span> GYEP</span>
+      <span>SPACE TO MAKE.</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script>
+    (() => {
+      const projects = window.GYEP_PORTFOLIO || [];
+      const params = new URLSearchParams(window.location.search);
+      const queryId = params.get('id');
+      const hashId = window.location.hash ? decodeURIComponent(window.location.hash.slice(1)) : '';
+      const id = queryId || hashId;
+      const project = projects.find(p => p.id === id) || null;
+
+      const title = document.querySelector('[data-project-title]');
+      const kicker = document.querySelector('[data-project-kicker]');
+      const summary = document.querySelector('[data-project-summary]');
+      const image = document.querySelector('[data-project-image]');
+      const fallback = document.querySelector('[data-project-fallback]');
+      const specs = document.querySelector('[data-project-specs]');
+      const storyTitle = document.querySelector('[data-project-story-title]');
+      const storyCopy = document.querySelector('[data-project-story-copy]');
+      const steps = document.querySelector('[data-project-steps]');
+      const orderLink = document.querySelector('[data-order-link]');
+
+      function setFallback() {
+        if (!project) return;
+        fallback.innerHTML = `
+          <div class="mock-product mock-${project.accent || 'light'} project-mock-large" aria-hidden="true">
+            <span class="mock-orbit"></span>
+            <span class="mock-block mock-block-a"></span>
+            <span class="mock-block mock-block-b"></span>
+            <span class="mock-line"></span>
+            <span class="mock-caption">${project.product}</span>
+          </div>`;
+        fallback.hidden = false;
+      }
+
+      function renderEmpty() {
+        // Direct page open without an id: show a project picker instead of an error.
+        if (!id) {
+          kicker.textContent = 'GYEP / PROJECTS';
+          title.textContent = 'CHOOSE A PROJECT.';
+          summary.textContent = 'Open a showcase from the portfolio to see its full story, specs, and production flow.';
+          storyTitle.textContent = 'SELECT A PIECE.';
+          storyCopy.innerHTML = projects.length
+            ? projects.map(project => `<a class="project-picker-link" href="project.html?id=${encodeURIComponent(project.id)}#${encodeURIComponent(project.id)}"><span>${project.number}</span><strong>${project.title}</strong><em>${project.product}</em><b>↗</b></a>`).join('')
+            : 'No showcase projects have been added yet.';
+          specs.innerHTML = '';
+          steps.innerHTML = '';
+          orderLink.textContent = 'Back to Portfolio →';
+          orderLink.href = 'portfolio.html';
+          document.title = 'Projects — GYEP';
+          fallback.innerHTML = `<div class="project-picker-note"><span>${projects.length}</span><strong>SELECTED<br>SHOWCASES</strong><p>Choose a project to continue.</p></div>`;
+          fallback.hidden = false;
+          return;
+        }
+
+        kicker.textContent = 'GYEP / PROJECT';
+        title.textContent = 'NOT FOUND';
+        summary.textContent = 'This showcase does not exist yet. Go back to the portfolio and choose another project.';
+        storyTitle.textContent = 'CHOOSE ANOTHER PIECE.';
+        storyCopy.textContent = 'Project detail is data-driven, so adding a new showcase only requires another entry in js/portfolio.js.';
+        specs.innerHTML = '';
+        steps.innerHTML = '';
+        orderLink.textContent = 'Back to Portfolio →';
+        orderLink.href = 'portfolio.html';
+        document.title = 'Project Not Found — GYEP';
+        setFallback();
+      }
+
+      if (!project) {
+        renderEmpty();
+      } else {
+        kicker.textContent = `${project.eyebrow} · ${project.categoryLabel}`;
+        title.textContent = project.title;
+        summary.textContent = project.intro;
+        storyTitle.textContent = project.storyTitle;
+        storyCopy.textContent = project.story;
+        document.title = `${project.title} — GYEP`;
+
+        specs.innerHTML = (project.details || []).map(([label, value]) => `
+          <div class="project-spec"><dt>${label}</dt><dd>${value}</dd></div>`).join('');
+
+        steps.innerHTML = (project.steps || []).map(([num, heading, copy]) => `
+          <article class="project-step">
+            <div class="project-step-number">${num}</div>
+            <h3>${heading}</h3>
+            <p>${copy}</p>
+          </article>`).join('');
+
+        image.src = project.image;
+        image.alt = `${project.title} — ${project.product}`;
+        image.addEventListener('error', () => { image.hidden = true; setFallback(); }, { once: true });
+        image.addEventListener('load', () => { image.hidden = false; fallback.hidden = true; }, { once: true });
+        const matchedProduct = (window.GYEP_PRODUCTS || []).find(p => p.name === project.product);
+        orderLink.href = matchedProduct ? `product.html?id=${encodeURIComponent(matchedProduct.id)}` : 'shop.html';
+      }
+
+      document.querySelectorAll('[data-year]').forEach(el => el.textContent = new Date().getFullYear());
+    })();
+  </script>
+</body>
+</html>
